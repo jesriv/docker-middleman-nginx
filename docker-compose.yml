@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  site:
+    build: middleman
+    volumes:
+      - frontendbuild:/usr/src/build
+    environment:
+      - GIT_URL=git@bitbucket.org:sccdigital/ADD-REPO-NAME.git
+  webserver:
+    build: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - frontendbuild:/usr/share/nginx/html
+
+volumes:
+  frontendbuild:
