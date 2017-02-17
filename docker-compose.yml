@@ -6,7 +6,7 @@ services:
     volumes:
       - frontendbuild:/usr/src/build
     environment:
-      - GIT_URL=git@bitbucket.org:sccdigital/ADD-REPO-NAME.git
+      - GIT_URL=https://github.com/jesriv/front-end-starter.git
   webserver:
     build: nginx
     ports:

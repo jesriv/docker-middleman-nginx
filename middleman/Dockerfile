@@ -19,6 +19,4 @@ RUN chmod 700 /root/.ssh/id_rsa \
     && chmod +x /usr/local/bin/install-frontend.sh \
     && chmod +x /usr/local/bin/clean-frontend.sh
 
-#ENV GIT_URL "git@bitbucket.org:sccdigital/sk-middleman-project.git"
-
 CMD ["tail", "-f", "/dev/null"]
