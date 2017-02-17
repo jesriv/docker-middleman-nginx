@@ -1,6 +1,6 @@
 # Docker Middleman Nginx on Alpine Linux
 
-This is a Docker starting point for building Middleman projects and serving them through Nginx. 
+This is a Docker starting point for building Middleman projects in one container and serving them through an Nginx container. 
 
 ## Before running the build
 
